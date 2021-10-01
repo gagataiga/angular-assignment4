@@ -10,10 +10,15 @@
 
     // *** Set up UI states ***
     $stateProvider
-    // Home page
-    .state('home', {
-      url: '/',
-      templateUrl: "src/templates/home-template.html"
-    })
+      // Home page
+      .state('home', {
+        url: '/',
+        templateUrl: "src/templates/home-template.html"
+      })
+
+      .state("mainList", {
+        url: "/main-list",
+        templateUrl: "src/templates/categories-template.html"
+      });
   }
 })();

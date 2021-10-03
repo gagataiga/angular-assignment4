@@ -7,6 +7,7 @@
   
   function CategoriesController(items) {
     let self = this;
+    console.log("main category items; ", items);
     self.items = items;
   }
 })();

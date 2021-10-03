@@ -32,14 +32,15 @@
       })
       return response.then(function success(result) { 
         service.items = result.data;
-        console.log(service.items);
         return service.items;
       }).catch(function error(error) { 
         alert(error);
       })
     }
 
+
     service.getItemsForCategory = (categoryShortName) => { 
+      console.log(categoryShortName);
       const response = $http({
         method: "GET",
         url: ApiBasePath.categoryDetailPath,
@@ -47,10 +48,9 @@
           category: categoryShortName
         }
       })
-
       return response.then(function success(result) { 
-        service.items = result.data;
-        console.log(service.items);
+        service.items = result.data.menu_items;
+        console.log("getItemsForCategory",service.items);
         return service.items;
       }).catch(function error(error) { 
         alert(error);

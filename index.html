@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <title>Menu App</title>
 </head>
 
 <body>
@@ -14,18 +14,22 @@
 
   <ui-view></ui-view>
 
-  <!--  libraries  -->
+  <!-- Liblary -->
   <script src="lib/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
 
-  <!-- modules -->
-  <script src="src/module/menuapp.module.js"></script>
-  <script src="src/module/data.module.js"></script>
+  <!-- module -->
+  <script src="src/module/data-module.js"></script>
+  <script src="src/module/menuapp-module.js"></script>
 
-  <!-- routes -->
-  <script src="src/route/routes.js"></script>
-  <!-- 'menuApp' module artifacts -->
+  <!-- router -->
+  <script src="src/route.js"></script>
 
+  <!-- module artifact -->
+  <script src="src/component/categories.component.js"></script>
+  <script src="src/component/items-component.js"></script>
+  <script src="src/controller/categorisController.js"></script>
+  <script src="src/service/menu-data-service.js"></script>
 </body>
 
 </html>
